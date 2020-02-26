@@ -1,0 +1,12 @@
+---
+# tasks file for azure-sqlserver
+
+- name: Create/Update Azure SQL Database Managed Server
+  azure_rm_sqlserver:
+    name: "{{ sql_server }}"
+    location: "{{ location }}"
+    resource_group: "{{ resource_group }}"
+    admin_username: "{{ sql_server_admin }}"
+    admin_password: "{{ sql_server_password }}"
+    version: "{{ sql_version | default('12.0',true)}}"
+  no_log: true
