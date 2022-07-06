@@ -6,11 +6,18 @@ Creates new Microsoft SQL Server in Azure
 Requirements
 ------------
 
-ansible >=2.7.0
-Azure RM modules
-Resource group must exists prior
+Tested on ansible [core 2.13.1]
+
+Install the Azure Collection from Galaxy:
+- ansible-galaxy collection install azure.azcollection
+
+Install the Python requirement packages from the collection
+- sudo pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt
+
+**Resource group must exists prior**
 
 Server Module Documentation: <https://docs.ansible.com/ansible/latest/modules/azure_rm_sqlserver_module.html>
+
 
 Role Variables
 --------------

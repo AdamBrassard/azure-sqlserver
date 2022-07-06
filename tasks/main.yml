@@ -1,7 +1,7 @@
 ---
 # tasks file for azure-sqlserver
 - name: Create/Update Azure SQL Database Managed Server
-  azure_rm_sqlserver:
+  azure.azcollection.azure_rm_sqlserver:
     name: "{{ sql_server }}"
     location: "{{ location }}"
     resource_group: "{{ resource_group }}"
