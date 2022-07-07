@@ -31,7 +31,7 @@ galaxy_info:
   - name: Azure
 
   cloud_platforms:
-    - azure
+    - Azure
 
   galaxy_tags:
     - database
